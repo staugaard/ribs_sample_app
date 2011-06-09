@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Todo</title>
+    <script src="vendor/underscore-1.1.5.js"></script>
+    <script src="vendor/jquery-1.6.js"></script>
+    <script src="vendor/handlebars.js"></script>
+    <script src="vendor/backbone-f4cfbd633df0a34a388c.js"></script>
+    <script src="vendor/ribs.js"></script>
+    <script src="app.js"></script>
+    <style type="text/css" media="screen">
+      li.isDone {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <script id="todos-template" type="text/x-handlebars-template">
+      <h1>{{name}}</h1>
+
+      {{#collection todos tagName="ul" itemName="todo" itemView="TodoApp.TodoItemView" itemClassBinding="todo.isDone"}}
+        {{todo.title}}
+      {{/collection}}
+
+      <input type="text" />
+    </script>
+
+    <div id="todos">
+      
+    </div>
+  </body>
+</html>
