@@ -1,3 +1,7 @@
+//  ribs.js
+//  (c) 2011 Zendesk Inc.
+//  Ribs may be freely distributed under the MIT license.
+
 /*globals _, Backbone*/
 (function(exports) {
   var Ribs = exports.Ribs = exports.Ribs || {};
